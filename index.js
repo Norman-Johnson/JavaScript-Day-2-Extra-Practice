@@ -109,6 +109,8 @@ you will need to invoke the function each time you wish to add a new code
 */
 console.log("********** Task 8 **********");
 
-const airports = vacations.filter(function(arr, index, code){
-
+const airportCode = ['YYZ', 'MIA', 'SDV', 'ISL', 'BKK', 'LIM', 'MCT', 'SYD', 'CPT', 'CUN']
+vacations.forEach(function(item, index){
+item.code = airportCode [index]
 });
+console.log(vacations);
