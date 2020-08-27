@@ -62,7 +62,7 @@ console.log("********** Task 4 **********");
 
 const perfectVacationSpot = vacations.filter(function(item){
     
-           return item.beach = true, item.temperature > 90;
+           return item.beach = true && item.temperature > 90;
         
     
 });
@@ -75,7 +75,7 @@ TASK 5 🚀
 console.log("********** Task 5 **********");
 
 const theDigitalNomad = vacations.filter(function(item){
-return item.wifi = 'strong', item.beach = true, item.hiking = true;
+return item.wifi === 'strong' && item.beach === true && item.hiking === true;
 });
 console.log(theDigitalNomad);
 
@@ -85,7 +85,10 @@ TASK 6 🚀
 */
 console.log("********** Task 6 **********");
 
-
+const hikingAndOrTheBeach = vacations.filter(function(item){
+return item.hiking === true && beach === true, item.hiking === true || item.beach === true;
+});
+console.log(hikingAndOrTheBeach)
 /* 
 TASK 7 🚀
 // write a function that finds the average of overall ratings in a given array. The function should take an array as its argument and should return the average of the overall ratings in that array 
