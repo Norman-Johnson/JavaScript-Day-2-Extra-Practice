@@ -19,6 +19,7 @@ for example you no longer have any onions and need to remove it from the list of
 Use .forEach() - hint - you will need to include the index in the callback
  */
 console.log("********** Task 2 **********");
+
 function noChili(arr, item){
 toppings.forEach(noChili(item, index));
 toppings.splice(3,1);
@@ -32,8 +33,8 @@ TASK 3 🚀
 // Sort the topping alphabetically and return them in a new array 
 */
 console.log("********** Task 3 **********");
-const alphaTop = toppings.sort();
 
+const alphaTop = toppings.sort();
 
 console.log(alphaTop);
 
@@ -59,6 +60,13 @@ TASK 4 🚀
 */
 console.log("********** Task 4 **********");
 
+const perfectVacationSpot = vacations.filter(function(item){
+    
+           return item.beach = true, item.temperature > 90;
+        
+    
+});
+console.log(perfectVacationSpot);
 
 /*
 TASK 5 🚀
@@ -66,6 +74,10 @@ TASK 5 🚀
 */
 console.log("********** Task 5 **********");
 
+const theDigitalNomad = vacations.filter(function(item){
+return item.wifi = 'strong', item.beach = true, item.hiking = true;
+});
+console.log(theDigitalNomad);
 
 /* 
 TASK 6 🚀
