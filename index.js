@@ -86,7 +86,7 @@ TASK 6 🚀
 console.log("********** Task 6 **********");
 
 const hikingAndOrTheBeach = vacations.filter(function(item){
-return item.hiking === true && beach === true, item.hiking === true || item.beach === true;
+return item.hiking === true && item.beach === true, item.hiking === true || item.beach === true;
 });
 console.log(hikingAndOrTheBeach)
 /* 
@@ -96,6 +96,11 @@ hint - use .reduce()
 */
 console.log("********** Task 7 **********");
 
+const overallRatings = vacations.reduce(function(arr, item){
+return  arr + item.overall_rating / 10;
+
+},0);
+console.log(`The average of the Overall Rating is ${overallRatings}`);
 /*
 TASK 8 🚀
 Find the airport codes for each of the cities in the vacation array and write a function to add them to the objects in the array
@@ -103,3 +108,7 @@ hint - your function should include array, index and code as parameters
 you will need to invoke the function each time you wish to add a new code
 */
 console.log("********** Task 8 **********");
+
+const airports = vacations.filter(function(arr, index, code){
+
+});
